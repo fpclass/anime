@@ -1,0 +1,40 @@
+name:                anime
+version:             1.0.0.0
+github:              "fpclass/anime"
+license:             MIT
+author:              "Michael B. Gale"
+maintainer:          "m.gale@warwick.ac.uk"
+copyright:           "Copyright 2019 Michael B. Gale"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/fpclass/anime#readme>
+
+dependencies:
+- base
+- aeson
+- text
+- servant
+- servant-client
+- http-client
+- http-client-tls
+- time
+
+default-extensions:
+- TypeFamilies
+- TypeOperators
+- DataKinds
+- OverloadedStrings
+
+library:
+  source-dirs: src
+  ghc-options:
+  - -W
