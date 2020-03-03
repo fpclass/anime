@@ -1,19 +1,19 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.0.
+-- This file has been generated from package.yaml by hpack version 0.31.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b62b40a3e8441d55b2f2bd54bf31b726eb2dd4813179db011c093a09eea7fc11
+-- hash: c100a2c248ab17b00bf480fcb117f9f8130f4c3cc19d1d19bac12816629a58d7
 
 name:           anime
-version:        1.0.0.0
+version:        1.1.0.0
 description:    Please see the README on GitHub at <https://github.com/fpclass/anime#readme>
 homepage:       https://github.com/fpclass/anime#readme
 bug-reports:    https://github.com/fpclass/anime/issues
 author:         Michael B. Gale
 maintainer:     m.gale@warwick.ac.uk
-copyright:      Copyright 2019 Michael B. Gale
+copyright:      Copyright 2020 Michael B. Gale
 license:        MIT
 license-file:   LICENSE
 build-type:     Simple
@@ -32,7 +32,7 @@ library
       Paths_anime
   hs-source-dirs:
       src
-  default-extensions: TypeFamilies TypeOperators DataKinds OverloadedStrings
+  default-extensions: TypeOperators DataKinds
   ghc-options: -W
   build-depends:
       aeson

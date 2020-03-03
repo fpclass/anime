@@ -29,10 +29,8 @@ dependencies:
 - time
 
 default-extensions:
-- TypeFamilies
 - TypeOperators
 - DataKinds
-- OverloadedStrings
 
 library:
   source-dirs: src
