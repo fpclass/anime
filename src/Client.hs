@@ -38,7 +38,7 @@ url = BaseUrl Https "animesoc.co.uk" 443 "/api/"
 
 -- | `getEvents` is a computation which retrieves events from the API if
 -- successful or an error if not.
-getEvents :: IO (Either ServantError [Event])
+getEvents :: IO (Either ClientError [Event])
 getEvents = do
     manager <- newManager tlsManagerSettings
     runClientM events (ClientEnv manager url Nothing)
