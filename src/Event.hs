@@ -19,24 +19,24 @@ data Event = Event {
     eventID           :: Int,
     eventTitle        :: Text,
     eventSubtitle     :: Text,
-    eventWhen         :: UTCTime,
-    eventWhere        :: Text,
+    eventWhen         :: Maybe UTCTime,
+    eventWhere        :: Maybe Text,
     eventDetails      :: Text,
-    eventMaxSignups   :: Int,
-    eventSignupsOpen  :: UTCTime,
-    eventSignupsClose :: UTCTime
-} deriving Show
+    eventMaxSignups   :: Maybe Int,
+    eventSignupsOpen  :: Maybe UTCTime,
+    eventSignupsClose :: Maybe UTCTime
+} deriving (Eq, Show)
 
 instance FromJSON Event where
     parseJSON = withObject "Event" $ \v ->
         Event <$> v .: "id"
               <*> v .: "title"
               <*> v .: "subtitle"
-              <*> v .: "when"
-              <*> v .: "where"
+              <*> v .:? "when"
+              <*> v .:? "where"
               <*> v .: "details"
-              <*> v .: "max_signups"
-              <*> v .: "signups_open"
-              <*> v .: "signups_close"
+              <*> v .:? "max_signups"
+              <*> v .:? "signups_open"
+              <*> v .:? "signups_close"
 
 -------------------------------------------------------------------------------

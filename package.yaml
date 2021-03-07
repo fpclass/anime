@@ -4,7 +4,7 @@ github:              "fpclass/anime"
 license:             MIT
 author:              "Michael B. Gale"
 maintainer:          "m.gale@warwick.ac.uk"
-copyright:           "Copyright 2020 Michael B. Gale"
+copyright:           "Copyright 2021 Michael B. Gale"
 
 extra-source-files:
 - README.md
